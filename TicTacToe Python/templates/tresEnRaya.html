@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="{{url_for('static' ,filename='css/estilo.css') }}" />
+<script src="{{url_for('static' ,filename='js/events.js') }}" ></script>
+  </head>
+
+<body>
+
+
+ 
+  <div class="svg-container">
+ 
+    <svg viewbox="0 0 800 400" class="svg">
+      <path id="curve" fill="#73E53A " d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z">
+      </path>
+    </svg>
+  </div>
+
+  <header>
+  	
+  	<table style="margin: 0 auto;" >
+            <tr>
+                <td><img src="{{url_for('static' ,filename='img/encabezado.jpg' ) }}" height="220" width="900" ></td>
+                
+            </tr>
+        </table>
+    
+  </header>
+
+ 
+    
+<div class="container">
+ 
+  <br>
+
+  <div class="play-area">
+    <div id="block_0" name="celda" value="0"  class="block"></div>
+    <div id="block_1" name="celda" value="1"  class="block"></div>
+    <div id="block_2" name="celda" value="2"  class="block"></div>
+    <div id="block_3" name="celda" value="3"  class="block"></div>
+    <div id="block_4" name="celda" value="4"  class="block"></div>
+    <div id="block_5" name="celda" value="5"  class="block"></div>
+    <div id="block_6" name="celda" value="6"  class="block"></div>
+    <div id="block_7" name="celda" value="7"  class="block"></div>
+    <div id="block_8" name="celda" value="8"  class="block"></div>
+</div>
+<br>
+  
+  <h2 id="winner"></h2>
+  <button onclick="reset_board()">Nuevo Juego</button>
+
+
+</div>
+<br>
+
+
+  <footer>
+    <p>Integrantes</p>
+    <br>
+    <small>José Luis Suarez Mancilla  - </small>
+    <small>Richard Alexander Acevedo Ramirez - </small>
+  </footer>
+</body>
+
+</html>
